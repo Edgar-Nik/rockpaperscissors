@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #4383c3;
+    color: #fff;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(90deg, #4383c3 40%, #30b4cb 60%);
+    position: relative;
+    color: #fff;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+}
+
+.game-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 100px;
+}
+
+.game-holder > * {
+    display: inline-block;
+}
+
+/*.gamer {*/
+/*    display: inline-block;*/
+/*}*/
+
+.gamer:first-child {
+    float: left;
+    border-right: 1px dashed #fff;
+}
+
+.gamer {
+    text-align: center;
+    width: 50%;
+}
+
+.options img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.options img:hover {
+    transform: scale(1.1);
+}
+
+.options img:active {
+    transform: scale(.9);
+}
+
+.options i {
+    font-size: 160px;
+}
+
+.gamer .score {
+    padding: 40px;
+    font-weight: 700;
+}
+
+.score span {
+    font-size: 40px;
+    display: block;
+}
+
+.message {
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.win, .lose {
+    display: none;
+}
+
+.win, .lose {
+    background: linear-gradient(90deg, #4383c3 40%, #30b4cb 60%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 10;
+    font-size: 70px;
+}
+
+.result {
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
